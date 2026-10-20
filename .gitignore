@@ -1,0 +1,30 @@
+# Competition data: download from Kaggle, never commit (large, and licensed by the host)
+*.wav
+data/
+input/
+train/
+test/
+
+# Python / Jupyter
+__pycache__/
+*.pyc
+.ipynb_checkpoints/
+.venv/
+venv/
+
+# Model weights and caches (Whisper, sentence-transformers)
+*.pt
+*.bin
+*.safetensors
+models/
+.cache/
+
+# Secrets: the Kaggle API token must never be pushed
+kaggle.json
+.env
+
+# OS / editor
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/

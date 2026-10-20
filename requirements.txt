@@ -1,0 +1,19 @@
+# Libraries used by the pipeline described in README.md
+# Install: pip install -r requirements.txt
+
+# 1. Transcription (Whisper small)
+faster-whisper
+
+# 2. Features
+numpy
+pandas
+sentence-transformers   # all-MiniLM-L6-v2 transcript embeddings
+
+# 3. Models + cross-validation
+scikit-learn            # Ridge, SVR, KFold, metrics
+scipy                   # Pearson correlation
+lightgbm
+
+# 4. Optional: DeBERTa fine-tune (experiment 4)
+# torch
+# transformers
