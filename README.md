@@ -47,6 +47,7 @@ Predict a grammar score for each spoken audio clip.
 - `notebook.ipynb`: final Kaggle notebook
 - `submission.csv`: final predictions
 - `README.md`: this file
+- `src/metrics.py`: RMSE, MAE, Pearson and 0-5 clipping used for CV reporting (tests in `tests/`)
 - `requirements.txt`: Python libraries for the pipeline
 - `.gitignore`: keeps audio data, model weights and the Kaggle API token out of git
 
