@@ -49,6 +49,7 @@ Predict a grammar score for each spoken audio clip.
 - `README.md`: this file
 - `src/metrics.py`: RMSE, MAE, Pearson and 0-5 clipping used for CV reporting (tests in `tests/`)
 - `src/features.py`: fluency and text-structure features from a transcript (tests in `tests/`)
+- `src/submission.py`: writes `submission.csv` (clipped to 0-5) and validates it before upload (tests in `tests/`)
 - `requirements.txt`: Python libraries for the pipeline
 - `.gitignore`: keeps audio data, model weights and the Kaggle API token out of git
 
