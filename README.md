@@ -51,6 +51,7 @@ Predict a grammar score for each spoken audio clip.
 - `src/features.py`: fluency and text-structure features from a transcript (tests in `tests/`)
 - `src/submission.py`: writes `submission.csv` (clipped to 0-5) and validates it before upload (tests in `tests/`)
 - `src/cv.py`: 5-fold cross-validation returning out-of-fold predictions and the RMSE / MAE / Pearson for the experiment log (tests in `tests/`)
+- `src/transcripts.py`: `transcripts.json` cache so Whisper transcribes each clip only once, saving after every clip (tests in `tests/`)
 - `requirements.txt`: Python libraries for the pipeline
 - `.gitignore`: keeps audio data, model weights and the Kaggle API token out of git
 
