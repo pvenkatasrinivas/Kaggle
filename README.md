@@ -56,6 +56,7 @@ Predict a grammar score for each spoken audio clip.
 - `src/feature_table.py`: joins transcripts and clip durations into one feature table (names, columns, rows), skipping clips that lack either (tests in `tests/`)
 - `src/labels.py`: loads the train csv labels (checked to be 0-5) and orders them to match the feature table rows (tests in `tests/`)
 - `src/log_row.py`: formats CV metrics into an experiment-log table row (leaderboard stays TBD until known) (tests in `tests/`)
+- `src/baseline.py`: mean-score baseline run through the same 5-fold CV, the RMSE floor a real model must beat (tests in `tests/`)
 - `requirements.txt`: Python libraries for the pipeline
 - `.gitignore`: keeps audio data, model weights and the Kaggle API token out of git
 
